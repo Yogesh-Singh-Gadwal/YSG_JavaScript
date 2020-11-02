@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">		
+    // nested functions
+
+    function doResult(a,b)
+    {
+      function doSum()
+      {
+        document.write('<h1>Sum of value is : '+(a+b).toString());
+      } 
+      
+      function doDiff()
+      {
+       document.write('<h1>Diff of value is : '+(b-a).toString());
+      } 
+
+      doSum();
+      document.write('<br><br>')
+      return doDiff;
+    }
+    
+    var b = doResult(10,30);
+    b();
+   	</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
+
