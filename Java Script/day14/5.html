@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+      var ary = [];
+
+      ary[0] =function ()
+             { 
+              alert('Function-1');
+             }  
+      
+      ary[1] =function ()
+             { 
+              alert('Function-2');
+             }
+
+      ary[2] =function ()
+             { 
+              alert('Function-3');
+             }
+
+      ary[3] =function ()
+             { 
+              alert('Function-4');
+             }
+             
+    //ary[2]();  
+    function myfun()
+    {
+           var cod = document.getElementById("mydata").value;
+           ary[cod]();
+    }
+     
+	</script>
+</head>
+<body>
+
+<br><br><br><br>
+       Data : <input type="text" id="mydata"> 
+              <button onclick="myfun();">Result :</button>
+        
+
+</body>
+</html>
+

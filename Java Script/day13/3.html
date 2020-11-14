@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+       function doprocess()
+       {			
+			val1 = parseInt(document.getElementById('one').value); 
+            val2 = parseInt(document.getElementById('two').value);
+
+            val3= val1+val2;					  
+			document.getElementById('three').innerHTML= val3.toString();               
+       }
+	</script>
+</head>
+<body>
+	     <br><br><br><br><br>
+          	
+			 Value =1 :<input type="text" name="uname" id="one"/> 
+		     Value =2 :<input type="text" name="uname" id="two"/> &nbsp;&nbsp;= <span id="three"></span>
+		    <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			
+		    <button type="button" onclick="doprocess();">Click</button>
+
+</body>
+</html>

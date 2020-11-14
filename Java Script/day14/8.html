@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+
+		var ary = [];
+
+			ary[0] =function ()
+				{ 
+					return 'Function-1';
+				}  
+
+			ary[1] =function ()
+				{ 
+					return 'Function-2';
+				}
+
+			ary[2] ='Micky';
+
+			ary[3] =function ()
+				{ 
+					return 'Function-4';
+				}
+	function myfun()
+	{	
+		var data = []
+		for(var i=0;i<ary.length;i++)
+		{
+            if(typeof ary[i] === 'function')
+			{
+				//document.write("<h1>Result is : "+ary[i]());
+				
+				    data[i]= ary[i](); 
+				
+
+				
+			}  
+		}
+		//document.write("<h1>Result is : "+data);
+		document.getElementById("one").innerHTML = data;
+    }
+    
+	</script>
+</head>
+<body>
+
+ 
+	<br><br><br><br>
+	 
+	<h1>Result is : <span style="color:red;" id="one"></span></h1>
+
+	<button onclick="myfun();">Get Data</button>
+
+</body>
+</html>
+
+
+
+
+
+

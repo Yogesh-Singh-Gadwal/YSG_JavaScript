@@ -1,0 +1,41 @@
+<html>
+      <head>
+	        <script type="text/javascript">
+			
+			      var val1;
+				  var val2;
+				  var val3;
+			      function myfun()
+				  {
+				     val1 = parseInt(document.getElementById('one').value); 
+                     val2 = parseInt(document.getElementById('two').value);
+
+                      val3= val1+val2;					  
+					 document.getElementById('three').innerHTML= val3.toString();             					 
+			      }
+			     
+				  function myfun2()
+				  {
+				     val1 = parseInt(document.getElementById('one').value); 
+                     val2 = parseInt(document.getElementById('two').value);
+                     
+					 val3= val1-val2;					  
+					 document.getElementById('three').innerHTML= val3.toString();  					 
+			      }
+				 
+		    </script>
+	  </head>
+	  <body>	      
+			<br><br><br><br>
+			<br><br><br><br>	    
+			
+			Value =1 :<input type="text" name="uname" id="one"/> 
+		    Value =2 :<input type="text" name="uname" id="two"/> &nbsp;&nbsp;= <span id="three"></span>
+		    <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			
+		    <button type="button" onclick="myfun();">+</button>
+			<button type="button" onclick="myfun2();">-</button>		
+	  </body>
+</html>
+

@@ -1,0 +1,28 @@
+<html>
+     <head>
+	      <script type="text/javascript">		  
+		         function myfun(n)
+				 {
+				    var current =0;
+                    var max =n;
+
+                    return function ()
+					 {
+					  return (current < max)? current++ : current;
+					 }    			 
+				 }				 
+				var d= myfun(5);				 
+				   alert(d()); // 0
+				   alert(d()); // 1
+				   alert(d()); // 2
+				   alert(d()); // 3
+				   alert(d()); // 4
+				   alert(d()); // 5
+				   alert(d()); // 5
+				   alert(d()); // 5
+				 
+		  </script>
+	 </head>
+	 <body>
+	 </body>
+</html>

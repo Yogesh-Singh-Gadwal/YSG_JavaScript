@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">		
+
+      var ary = [];
+
+      ary[0] =function ()
+             { 
+              alert('Function-1');
+             }  
+      
+      ary[1] =function ()
+             { 
+              alert('Function-2');
+             }
+
+      ary[2] ='Micky';
+
+      ary[3] =function ()
+             { 
+              alert('Function-4');
+             }
+             
+      if(typeof ary[3] === 'function')
+      {
+
+      	  ary[3]();
+      }
+      else{
+      	  alert('Not a function ...');
+      }
+	</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+

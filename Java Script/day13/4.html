@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		body{
+			font-size: 20px;
+			font-style: oblique;
+		}
+		input{
+			width: 20%;
+			padding: 10px;
+		}
+		button{
+			width: 20%;
+			height: 50px;
+			border-radius: 10px;
+			background-color: coral;
+		}
+		#res1,#res2{
+			color: red;
+		}
+	</style>
+	<script type="text/javascript">
+		var data1 = '';
+		var data2 = '';
+       function doprocess()
+       {		   
+		  data1 = document.getElementById('one').value; 
+          data2 = document.getElementById('two').value;
+		  //console.log(data1);
+		  //console.log(typeof(data1));
+		  //console.log(data1.value)
+		  //console.log(data2);
+          function mysum()
+				  {
+					 val3= parseInt(data1)+parseInt(data2);					  
+					 document.getElementById('three').innerHTML= val3.toString();          					 
+			      }
+            if(data1 != ' ' && data2 != '')
+			{   
+				console.log("Function is called");
+				mysum();
+			}
+			else if(data1 == '' && data2 == '')
+			{   
+				document.getElementById('res1').innerHTML= "Value 1 is Missing";
+                document.getElementById('res2').innerHTML= "Value 2 is Missing"
+			}
+			else if(data2 == '')
+			{
+				document.getElementById('res2').innerHTML= "Value 2 is Missing"
+			}
+			else if(data1 == '')
+			{
+				document.getElementById('res1').innerHTML= "Value 1 is Missing";		
+				
+			} 		          
+       }
+	</script>
+</head>
+<body>
+	     <br><br><br><br><br>
+          	<h1>
+			 Value =1 :<input type="text" name="uname" id="one"/><span id="res1"></span><br><br> 
+			 Value =2 :<input type="text" name="uname" id="two"/> <br<br><span id="res2"></span>
+			 &nbsp;<br><br>Result is = <span id="three"></span>
+		    <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			
+		    <button type="button" onclick="doprocess();">Click</button>
+		</h1>
+</body>
+</html>

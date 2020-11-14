@@ -1,0 +1,25 @@
+<html>
+     <head>
+	      <script type="text/javascript">
+		  //funx constructor 		  
+	var d = function (a,b)
+				  {
+				    alert('sum of value : '+(a+b).toString());
+				  }
+				  
+	d(10,5);	  
+				
+     var e = new Function("a","b","alert('Diff of Value :'+(a-b).toString())");  				
+				  
+	e(130,40);	  
+			
+			
+     var f = new Function("a,b,c,d,e,f","alert('Sum of Value Again :'+(a+b+c+d+e+f).toString())");  				
+				  
+	f(130,40,43,65,33,44);
+			
+		  </script>
+	 </head>
+	 <body>
+	 </body>
+</html>

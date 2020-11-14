@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+       function doprocess(a,b)
+       {
+          function dosum()
+				  {
+				    alert('Sum of value is : '+(a+b));  
+			      }
+          dosum();
+
+         doprocess = function (a,b)
+         {
+            alert('Product of value is : '+(a*b));  
+         }  
+       }
+   
+
+ 
+	</script>
+</head>
+<body>
+      <br><br><br><br><br>          	
+      <button type="button" onclick="doprocess(5,7);">Data-1</button>
+      <br><br>
+
+      <button type="button" onclick="doprocess(5,7);">Data-2</button>
+      <br><br>
+
+      <button type="button" onclick="doprocess(5,7);">Data-3</button>
+      <br><br>
+
+      <button type="button" onclick="doprocess(5,7);">Data-4</button>
+      <br><br>
+
+</body>
+</html>
